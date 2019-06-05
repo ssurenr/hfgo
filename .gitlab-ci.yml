@@ -7,5 +7,5 @@ build:
   script:
     - mkdir -p $GOPATH/ssurenr
     - cp -r /builds/ssurenr/ $GOPATH/src/ssurenr/
-    - cd $GOPATH/src/ssurenr/hfgo/ch01
+    - cd $GOPATH/src/ssurenr/hfgo/ch01/code-magnet
     - go build
