@@ -1,0 +1,8 @@
+before_script:
+  - apt-get update
+  - apt-get install tree
+
+build:
+  image: golang
+  script:
+    - tree /go
