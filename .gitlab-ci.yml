@@ -1,8 +1,8 @@
 before_script:
   - apt-get update
-  - apt-get install tree
+  - apt-get install tree -y
 
 build:
   image: golang
   script:
-    - tree /go
+    - tree /builds
