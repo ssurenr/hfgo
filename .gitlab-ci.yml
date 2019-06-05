@@ -5,4 +5,7 @@ before_script:
 build:
   image: golang
   script:
-    - tree /builds
+    - mkdir -p $GOPATH/ssurenr
+    - cp -r /builds/ssurenr/ $GOPATH/src/ssurenr/
+    - cd $GOPATH/src/ssurenr/hfgo/ch01
+    - go build
